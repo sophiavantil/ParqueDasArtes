@@ -25,23 +25,29 @@ body {
     /* Remove o padding padrão */
     text-align: center;
 }
-
+/* Define a imagem de fundo como um gradiente linear */
 body {
     background-image: linear-gradient(45deg, #ff4444, #ff6b6b, #f06292, #ba68c8, #9575cd, #7986cb, #64b5f6, #4fc3f7, #4dd0e1, #4db6ac, #81c784, #aed581, #ffeb3b, #fde615);
+    /* Define o tamanho do fundo para 400% em ambas as direções */
     background-size: 400% 400%;
+    /* Aplica uma animação com duração de 10 segundos e repetindo infinitamente */
     animation: gradientAnimation 10s ease infinite;
 }
 
 @keyframes gradientAnimation {
+    /* No início da animação */
     0% {
+        /* Define a posição de fundo com 0% na horizontal e 50% na vertical */
         background-position: 0% 50%;
     }
-
+    /* No meio da animação */
     50% {
+        /* Move a posição de fundo para 100% na horizontal e mantém 50% na vertical */
         background-position: 100% 50%;
     }
-
+     /* No final da animação e volta à posição inicial */
     100% {
+        /* Redefine a posição de fundo para 0% na horizontal e 50% na vertical */
         background-position: 0% 50%;
     }
 }
