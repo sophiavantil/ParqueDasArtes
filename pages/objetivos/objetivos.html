@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"> <!-- idioma da pág -->
+
+<head> <!-- cabeçalho para metadados da pág -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, que suporta a maioria dos caracteres especiais e acentos. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para dispositivos móveis, garantindo que a página seja exibida corretamente em diferentes tamanhos de tela. -->
+    <link rel="stylesheet" href="/style.css"> <!-- link para o css da página, href é o nome do arquivo em css-->
+    <title> Parque das Artes </title> <!-- título do separador da pág -->
+    <meta name="description" content=""> <!-- fornecer um breve resumo do conteúdo da
+    página para ser exibido nos resultados dos mecanismos de busca. -->
+</head>
+
+<body> <!-- corpo da pág -->
+
+    <header> <!-- cabeçalho do corpo da pág -->
+        <h1>
+            <span>P</span>
+            <span>A</span>
+            <span>P</span>
+            <span>A</span>
+            <br> Objetivos
+        </h1> <!-- título do corpo da pág -->
+    </header>
+
+    <main> <!-- conteúdo principal da pág -->
+
+        <section class="info-pag">
+
+            <p class="texto-pag"> Nosso principal objetivo é democratizar o acesso à arte, levando atividades artísticas
+                e esportivas ao maior número de pessoas possível. Acreditamos na arte como ferramenta de transformação
+                social e como meio de fortalecer os vínculos familiares e comunitários. </p>
+
+            <div class="image-container">
+                <img src="/images/impacto2.png" alt="Imagem Objetivos 1" class="image-pags">
+                <img src="/images/historia5.png" alt="Imagem Objetivos 2" class="image-pags">
+            </div>
+        </section>
+
+        <section> <!-- seção de conteúdo -->
+
+            <div> <!-- divisão para agrupar os links -->
+                <a onclick="redirecionarFechar('/index.html')" class="button"> Voltar </a>
+                <!-- link com direcionamento para a home page -->
+            </div>
+
+        </section>
+    </main>
+
+    <footer> <!-- rodapé -->
+        <p> 2025 - PAPA, Parque das Artes. Todos os direitos reservados. </p> <!-- parágrafo do rodapé -->
+    </footer>
+
+    <script>
+        function redirecionarFechar(url) {
+            window.location.href = url; // Redireciona para a nova página
+            window.close(); // Fecha a página atual
+        }
+    </script>
+
+</body>
+
+</html>

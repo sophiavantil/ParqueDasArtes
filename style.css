@@ -1,0 +1,321 @@
+/* importa a fonte do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+/* importa a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Limelight&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", playfair-display;
+    /* Define a fonte padrão */
+    background-color: #98ac97;
+    /* Cor de fundo da página */
+    display: flex;
+    /* Usa Flexbox para layout */
+    flex-direction: column;
+    /* Alinha os itens na vertical */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
+    height: 100vh;
+    /* Preenche a altura total da viewport */
+    margin: 0;
+    /* Remove a margem padrão */
+    padding: 0;
+    /* Remove o padding padrão */
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(45deg, #ff4444, #ff6b6b, #f06292, #ba68c8, #9575cd, #7986cb, #64b5f6, #4fc3f7, #4dd0e1, #4db6ac, #81c784, #aed581, #ffeb3b, #fde615);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* estiliza as informações ao centro da pag */
+.info-pag {
+    width: 65rem;
+    /* Largura máxima da caixa de resultados */
+    height: 46vh;
+    /* Altura máxima da caixa de resultados */
+    overflow-y: auto;
+    /* Adiciona rolagem vertical se necessário */
+    margin-top: 0.1rem;
+    /* Espaçamento acima da caixa de resultados */
+    padding: 1rem;
+    /* Espaçamento interno */
+    border-radius: 0.6rem;
+    /* Borda arredondada */
+    background: #ffffff00;
+    /* Cor de fundo dos itens */
+    border-radius: 0.6rem;
+    /* Borda arredondada */
+    padding: 1rem;
+    /* Espaçamento interno */
+    margin-bottom: 1rem;
+    /* Espaçamento abaixo dos itens */
+    position: relative;
+    /* Torna o container um ponto de referência para o posicionamento absoluto */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    text-align: center;
+    font-family: "Itim", cursive;
+}
+
+.texto-pag {
+    text-align: center;
+    width: 40rem;
+    margin: 20px;
+}
+
+.image-pags {
+    width: 150px;
+    /* Defina a largura desejada */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    margin-right: 10px;
+    /* Espaçamento entre as imagens */
+    margin-top: 10px;
+    /* Espaçamento acima da imagem */
+    border-radius: 20px;
+    /* Deixa os cantos da imagem arredondados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Suaviza a transição quando passa o mouse */
+}
+
+.image-pags:hover {
+    transform: scale(1.5);
+    /* Aumenta a imagem em 1.5x quando passa o mouse */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    /* Adiciona uma sombra embaixo da imagem ao passar o mouse */
+}
+
+.image-container {
+    display: flex;
+    /* Faz com que os elementos filhos (imagens) fiquem lado a lado (em linha) */
+    flex-wrap: wrap;
+    /* Permite que as imagens que não couberem na linha "quebrem" para a linha de baixo */
+    align-items: flex-start;
+    /* Alinha as imagens ao topo da linha (caso tenham tamanhos diferentes) */
+}
+
+/* Estiliza os titulos h1 das páginas */
+h1 {
+    display: inline-block;
+    /* Para que os spans fiquem lado a lado */
+    font-size: 2.5rem;
+    font-family: "Barrio", system-ui;
+}
+
+h1 span {
+    display: inline-block;
+    /* Garante que cada letra seja tratada como um bloco inline */
+}
+
+h1 span:nth-child(1) {
+    color: green;
+    /* Primeira letra (P) verde */
+}
+
+h1 span:nth-child(2) {
+    color: blue;
+    /* Segunda letra (A) azul */
+}
+
+h1 span:nth-child(3) {
+    color: red;
+    /* Terceira letra (P) vermelha */
+}
+
+h1 span:nth-child(4) {
+    color: yellow;
+    /* Quarta letra (A) amarela */
+}
+
+h2 {
+    font-size: 2.5rem;
+    /* Tamanho da fonte */
+    color: #000000;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem;
+    /* Espaçamento entre letras */
+    line-height: normal;
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    /* Usa Flexbox para layout */
+    flex-direction: column;
+    /* Alinha os itens na vertical */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem;
+    /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.info-pag h2 {
+    font-size: 1.5rem;
+    /* Tamanho da fonte */
+    color: #222831;
+    /* Cor do texto */
+}
+
+/* botões da página */
+.button {
+    background: #dfb930d6;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+/* botões clicaveis com direcionamento de links */
+a {
+    display: block;
+    margin-bottom: 10px;
+    /* Adiciona um espaço entre os botões, deixando eles alinhados um embaixo do outro */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #e0d8cb00;
+    /* Cor de fundo do rodapé */
+    color: #000000fd;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    padding: 0;
+    /* Espaçamento interno */
+    width: 100%;
+    /* Largura total da página */
+    position: relative;
+    /* Posiciona o rodapé */
+    bottom: 0;
+    /* Alinha ao fundo da página */
+    font-size: 0.7rem;
+    /* Tamanho da fonte */
+}
+
+.footer-fixo {
+    background-color: #e0d8cb00;
+    /* Define a cor de fundo do rodapé */
+    color: #000000fd;
+    /* Define a cor do texto do rodapé */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    padding: 0;
+    /* Remove qualquer espaçamento interno */
+    width: 100%;
+    /* Faz o rodapé ocupar toda a largura da tela */
+    font-size: 0.7rem;
+    /* Define o tamanho da fonte do texto */
+    position: fixed;
+    /* Fixa o rodapé na tela, independente da rolagem */
+    bottom: 0;
+    /* Alinha o rodapé na parte inferior da janela */
+    left: 0;
+    /* Garante que comece a partir do lado esquerdo da tela */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem;
+        /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem;
+        /* Largura dos inputs em telas menores */
+        padding: 0.8rem;
+        /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        /* Largura da caixa de resultados em telas menores */
+        height: 40vh;
+        /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+        /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+        /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem;
+        /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem;
+        /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem;
+        /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh;
+        /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+        /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem;
+        /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}

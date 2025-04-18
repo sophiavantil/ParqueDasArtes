@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"> <!-- idioma da pág -->
+
+<head> <!-- cabeçalho para metadados da pág -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, que suporta a maioria dos caracteres especiais e acentos. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para dispositivos móveis, garantindo que a página seja exibida corretamente em diferentes tamanhos de tela. -->
+    <link rel="stylesheet" href="/style.css"> <!-- link para o css da página, href é o nome do arquivo em css-->
+    <title> Parque das Artes </title> <!-- título do separador da pág -->
+    <meta name="description" content=""> <!-- fornecer um breve resumo do conteúdo da
+    página para ser exibido nos resultados dos mecanismos de busca. -->
+</head>
+
+<body> <!-- corpo da pág -->
+
+    <header> <!-- cabeçalho do corpo da pág -->
+        <h1>
+            <span>P</span>
+            <span>A</span>
+            <span>P</span>
+            <span>A</span>
+            <br> Chico Fernandes <br> Fundador
+        </h1> <!-- título do corpo da pág -->
+    </header>
+
+    <main> <!-- conteúdo principal da pág -->
+
+        <section class="info-pag">
+
+            <p class="texto-pag"> Chico Fernandes vem de uma família musical: sua mãe era pianista e seu pai, operador
+                de filmes e afinador de pianos. Nascido em Leopoldina (MG), mudou-se ainda bebê para Duque de Caxias
+                (RJ), onde cresceu formando bandas e grupos teatrais com seus irmãos. Chegou a iniciar a faculdade de
+                Nutrição, mas logo percebeu que sua verdadeira vocação era a música — dizia que seus pacientes seriam
+                mais felizes com música do que com dietas.
+
+                No final dos anos 70, já com filhos, decidiu deixar a cidade grande em busca de uma vida mais tranquila.
+                Gravou um disco independente e se mudou para São Sebastião (SP), buscando qualidade de vida para a
+                família. Foi lá que nasceu a ideia da ONG, que passou por outras cidades como Ubatuba (SP), até chegar
+                definitivamente em Piúma (ES), onde Chico e sua família fundaram o grupo "Pais e Filhos", origem da
+                atual ONG Parque das Artes.</p>
+
+            <div class="image-container">
+                <img src="/images/especial_papa.png" alt="Imagem especial 1" class="image-pags">
+                <img src="/images/especial_papa2.png" alt="Imagem especial 2" class="image-pags">
+                <img src="/images/especial_papa3.png" alt="Imagem especial 3" class="image-pags">
+            </div>
+
+        </section>
+
+        <section> <!-- seção de conteúdo -->
+            <div> <!-- divisão para agrupar os links -->
+                <a onclick="redirecionarFechar('/index.html')" class="button"> Voltar </a>
+                <!-- link com direcionamento para a home page -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer> <!-- rodapé -->
+        <p> 2025 - PAPA, Parque das Artes. Todos os direitos reservados. </p> <!-- parágrafo do rodapé -->
+    </footer>
+
+    <script>
+        function redirecionarFechar(url) {
+            window.location.href = url; // Redireciona para a nova página
+            window.close(); // Fecha a página atual
+        }
+    </script>
+
+</body>
+
+</html>
