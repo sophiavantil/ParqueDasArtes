@@ -44,7 +44,7 @@ Como resultado, o projeto proporcionou:
 
 # Acesso ao Projeto
 
-🔗 
+🔗 https://parque-das-artes.vercel.app/
 
 # Tecnologias Utilizadas
 
