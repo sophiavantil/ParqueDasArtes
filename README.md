@@ -12,9 +12,9 @@
 
 # Descrição do Projeto
 
-Este é um **website informativo** desenvolvido para a ONG **Parque das Artes (PAPA)**, com o objetivo de divulgar sua história, atividades culturais e impacto social na comunidade.
+Este é um website informativo desenvolvido para a ONG **Parque das Artes (PAPA)**, com o objetivo de divulgar sua história, atividades culturais e impacto social na comunidade.
 
-O site apresenta conteúdos distribuídos em páginas como **História**, **Objetivos**, **Impacto Social** e uma seção especial dedicada ao fundador **Chico Fernandes**, contribuindo para a preservação de sua memória.
+O site apresenta conteúdos distribuídos em páginas como História, Objetivos, Impacto Social e uma seção especial dedicada ao fundador **Chico Fernandes**, contribuindo para a preservação de sua memória.
 
 Etapas do projeto:
 - Planejamento
@@ -23,7 +23,6 @@ Etapas do projeto:
 - Desenvolvimento com foco na clareza das informações e acessibilidade
 
 Como resultado, o projeto proporcionou:
-- Aumento no número de visitantes
 - Maior visibilidade da ONG na comunidade
 - Fortalecimento da cultura local
 
